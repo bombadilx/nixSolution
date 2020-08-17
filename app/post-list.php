@@ -4,6 +4,9 @@ require_once('../components/header.php');
 require_once('../components/navigation.php');
 require_once('articles.php');
 
+require_once('header.php');
+require_once('navigation.php');
+
 ?>
 
 <div class="post-list">
@@ -23,3 +26,6 @@ require_once('articles.php');
 </div>
 
 <?php require_once('../components/footer.php'); ?>
+
+<?php require_once('footer.php'); ?>
+
