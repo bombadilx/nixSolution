@@ -1,3 +1,9 @@
+<?php
+
+require_once('../components/header.php');
+require_once('../components/navigation.php');
+?>
+
 <div class="profile">
     <div class="profile-name">
         Имя пользователя
@@ -11,3 +17,7 @@
 </div>
 
 <?php
+
+require_once('../components/footer.php');
+
+?>
