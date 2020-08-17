@@ -1,3 +1,10 @@
+<?php
+
+require_once('header.php');
+require_once('navigation.php');
+
+?>
+
 <div class="post-list">
     <div class="post-list-title">
         Заголовок
@@ -10,4 +17,4 @@
     </div>
 </div>
 
-<?php
+<?php require_once('footer.php'); ?>
