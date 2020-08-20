@@ -1,8 +1,14 @@
 <?php
+session_start();
 
-require_once('components/header.php');
-require_once('components/navigation.php');
+use app\core\Router;
 
-    echo "Hello nixSolution";
+spl_autoload_register(function($class) {
+    $path = str_replace('\\', '/', $class . '.php');
+    if (file_exists($path)) {
+        require_once $path;
+    }
+});
 
-require_once('components/footer.php');
+$router = new Router;
+$router->run();

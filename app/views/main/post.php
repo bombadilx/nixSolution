@@ -1,16 +1,9 @@
-<?php
-
-require_once('../components/header.php');
-require_once('../components/navigation.php');
-require_once('articles.php');
-
-require_once('header.php');
-require_once('navigation.php');
-
-?>
 
 <div class="post-list">
-    <? foreach ($articles as $value): ?>
+    <?php
+    //var_dump($vars['articles']);
+    foreach ($vars['articles'] as $value): 
+    ?>
     <div class="article">
         <div class="post-list-title">
             <?= $value['title']; ?>
@@ -22,10 +15,6 @@ require_once('navigation.php');
             <?= $value['text'];?>
         </div>
     </div>
-    <?php endforeach ?>
+    <?php endforeach 
+    ?>
 </div>
-
-<?php require_once('../components/footer.php'); ?>
-
-<?php require_once('footer.php'); ?>
-
