@@ -17,7 +17,7 @@ class MainController extends Controller {
         $vars = [
             'articles' => $result,
         ];
-        var_dump($vars['articles']);
+        
         $this->view->render('Страница статей', $vars);
     }
 

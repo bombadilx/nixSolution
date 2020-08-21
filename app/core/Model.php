@@ -2,11 +2,12 @@
 
 namespace app\core;
 
+use app\lib\Db;
+
 abstract class Model {
     public $articles; 
 
     public function __construct() {
-        require_once 'app/views/main/articles.php';
-        $this->articles = $articles;
+        $this->articles = new Db();
     }
 }
