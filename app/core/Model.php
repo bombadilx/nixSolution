@@ -5,9 +5,9 @@ namespace app\core;
 use app\lib\Db;
 
 abstract class Model {
-    public $articles; 
+    public $db;
 
     public function __construct() {
-        $this->articles = new Db();
+        $this->db = new Db();
     }
 }

@@ -7,7 +7,39 @@ use app\core\Model;
 class Main extends Model {
     
     public function getPost() {
-        $result = $this->articles->row("SELECT id,title,descriptions,img FROM article");
+        $articles = new Articles;
+        $result = $articles->selectAll();
         return $result;
+    }
+}
+
+class Articles extends Model
+{
+    private $id;
+    private $title;
+    private $img;
+    private $descriptions;
+
+    private $articles;
+
+    public function selectAll()
+    {
+        $this->articles = $this->db->row("SELECT * FROM article");
+        return $this->articles;
+    }
+
+    public function create($title,$img,$descriptions)
+    {
+        # code...
+    }
+
+    public function delete($id)
+    {
+        # code...
+    }
+
+    public function update($title,$img,$descriptions)
+    {
+        # code...
     }
 }
