@@ -43,3 +43,34 @@ class Articles extends Model
         # code...
     }
 }
+
+class Users extends Model
+{
+    private $id;
+    private $name;
+    private $img;
+    private $status;
+    private $user;
+
+    public function select()
+    {
+        $this->user = $this->db->row("SELECT * FROM users");
+        return $this->user;
+    }
+
+    public function create()
+    {
+        # code...
+    }
+
+    public function delete()
+    {
+        # code...
+    }
+
+    public function update()
+    {
+        # code...
+    }
+}
+

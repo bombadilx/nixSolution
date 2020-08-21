@@ -26,4 +26,19 @@ return [
         'controller' => 'main',
         'action' => 'registration',
     ],
+
+    'enter' => [
+        'controller' => 'main',
+        'action' => 'enter',
+    ],
+
+    'logout' => [
+        'controller' => 'main',
+        'action' => 'logout',
+    ],
+
+    'reg' => [
+        'controller' => 'main',
+        'action' => 'reg',
+    ],
 ];

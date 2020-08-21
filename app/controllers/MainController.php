@@ -35,4 +35,18 @@ class MainController extends Controller {
     {
         $this->view->render('Страница профиля');
     }
+    public function enterAction()
+    {
+        $this->view->render('Обработчик');
+    }
+
+    public function logoutAction()
+    {
+        $this->view->render('Обработчик');
+    }
+
+    public function regAction()
+    {
+        $this->view->render('Обработчик');
+    }
 }

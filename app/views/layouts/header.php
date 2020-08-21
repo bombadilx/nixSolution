@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <title><?= $title ?></title>
 <body>
 <div class="header">
