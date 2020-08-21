@@ -9,6 +9,18 @@ class Main extends Model {
     public function getPost() {
         $articles = new Articles;
         $result = $articles->selectAll();
+        return $result;        
+    }
+    public function getUser($id)
+    {
+        $user = new Users;
+        $result = $user->select($id);
+        return $result;
+    }
+    public function updateStatus($id,$status)
+    {
+        $user = new Users;
+        $result = $user->update($id,$status);
         return $result;
     }
 }
@@ -52,9 +64,9 @@ class Users extends Model
     private $status;
     private $user;
 
-    public function select()
+    public function select($id)
     {
-        $this->user = $this->db->row("SELECT * FROM users");
+        $this->user = $this->db->row("SELECT * FROM users WHERE id = '$id'");
         return $this->user;
     }
 
@@ -68,9 +80,9 @@ class Users extends Model
         # code...
     }
 
-    public function update()
+    public function update($id, $status)
     {
-        # code...
+        $this->user = $this->db->row("UPDATE users SET status = '$status' WHERE id = '$id'");
     }
 }
 

@@ -41,4 +41,14 @@ return [
         'controller' => 'main',
         'action' => 'reg',
     ],
+
+    'create' => [
+        'controller' => 'main',
+        'action' => 'create',
+    ],
+
+    'status' => [
+        'controller' => 'main',
+        'action' => 'status',
+    ],
 ];

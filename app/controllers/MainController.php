@@ -33,7 +33,9 @@ class MainController extends Controller {
 
     public function profileAction()
     {
-        $this->view->render('Страница профиля');
+        $result = $this->model->getUser($_SESSION['id']);
+        //  $result2 = $this->model->upfate($_SESSION['id'],$status);
+        $this->view->render('Страница профиля', $result[0]);
     }
     public function enterAction()
     {
@@ -46,6 +48,16 @@ class MainController extends Controller {
     }
 
     public function regAction()
+    {
+        $this->view->render('Обработчик');
+    }
+
+    public function createAction()
+    {
+        $this->view->render('Обработчик');
+    }
+
+    public function statusAction()
     {
         $this->view->render('Обработчик');
     }
