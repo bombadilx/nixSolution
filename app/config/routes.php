@@ -8,47 +8,47 @@ return [
     ],
 
     'post' => [
-        'controller' => 'main',
+        'controller' => 'post',
         'action' => 'post',
     ],
 
     'profile' => [
-        'controller' => 'main',
+        'controller' => 'profile',
         'action' => 'profile',
     ],
     
     'login' => [
-        'controller' => 'main',
+        'controller' => 'auth',
         'action' => 'login',
     ],
 
     'registration' => [
-        'controller' => 'main',
+        'controller' => 'auth',
         'action' => 'registration',
     ],
 
     'enter' => [
-        'controller' => 'main',
+        'controller' => 'auth',
         'action' => 'enter',
     ],
 
     'logout' => [
-        'controller' => 'main',
+        'controller' => 'auth',
         'action' => 'logout',
     ],
 
     'reg' => [
-        'controller' => 'main',
+        'controller' => 'auth',
         'action' => 'reg',
     ],
 
     'create' => [
-        'controller' => 'main',
+        'controller' => 'profile',
         'action' => 'create',
     ],
 
     'status' => [
-        'controller' => 'main',
+        'controller' => 'profile',
         'action' => 'status',
     ],
 ];
