@@ -4,22 +4,6 @@ namespace app\models;
 
 use app\core\Model;
 
-class Profile extends Model {
-    
-    public function getUser($id)
-    {
-        $user = new Users;
-        $result = $user->select($id);
-        return $result;
-    }
-    public function updateStatus($id,$status)
-    {
-        $user = new Users;
-        $result = $user->update($id,$status);
-        return $result;
-    }
-}
-
 class Users extends Model
 {
     private $id;
@@ -47,5 +31,16 @@ class Users extends Model
     public function update($id, $status)
     {
         $this->user = $this->db->row("UPDATE users SET status = '$status' WHERE id = '$id'");
+    }
+
+    public function getUser($id)
+    {
+        $result = $this->select($id);
+        return $result;
+    }
+    public function updateStatus($id,$status)
+    {
+        $result = $this->update($id,$status);
+        return $result;
     }
 }

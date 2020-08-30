@@ -10,6 +10,6 @@ move_uploaded_file($tmp_name, $path);
 
 $db = new Db;
 
-$db->query("UPDATE users SET img = '$path' WHERE id ='$id'");
+$db->query("UPDATE users SET img = '$name' WHERE id ='$id'");
 
 header("Location: profile");

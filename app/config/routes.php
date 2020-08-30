@@ -8,12 +8,12 @@ return [
     ],
 
     'post' => [
-        'controller' => 'post',
+        'controller' => 'article',
         'action' => 'post',
     ],
 
     'profile' => [
-        'controller' => 'profile',
+        'controller' => 'users',
         'action' => 'profile',
     ],
     
@@ -43,12 +43,12 @@ return [
     ],
 
     'create' => [
-        'controller' => 'profile',
+        'controller' => 'users',
         'action' => 'create',
     ],
 
     'status' => [
-        'controller' => 'profile',
+        'controller' => 'users',
         'action' => 'status',
     ],
 ];

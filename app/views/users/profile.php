@@ -7,7 +7,7 @@
         Имя пользователя: <?= $_SESSION['login']; ?>
     </div>
     <div class="profile-image">
-        <img width="400px" src="<?= $vars['img']; ?>" alt="фото пользователя">
+        <img width="400px" src="app/image/<?= $vars['img']; ?>" alt="фото пользователя">
         <form action="create" method="post" enctype="multipart/form-data">
         <input type="file" name="image">
         <button type="submit">Изменить аватарку</button>

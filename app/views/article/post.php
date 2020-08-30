@@ -6,7 +6,7 @@
             <?= $value['title']; ?>
         </div>
         <div class="post-list-image">
-            <img width="200" src="<?= $value['img'];?>" alt="картинка-поста">
+            <img width="200" src="app/image/<?= $value['img'];?>" alt="картинка-поста">
         </div>
         <div class="post-list-text">
             <?= $value['descriptions'];?>

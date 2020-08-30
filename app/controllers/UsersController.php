@@ -4,7 +4,7 @@ namespace app\controllers;
 
 use  app\core\Controller;
 
-class ProfileController extends Controller {
+class UsersController extends Controller {
     public function profileAction()
     {
         $result = $this->model->getUser($_SESSION['id']);

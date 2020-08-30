@@ -7,6 +7,7 @@ class Router {
     protected $params = [];
 
     public function __construct() {
+
         $path = require 'app/config/routes.php';
         foreach ($path as $key => $value) {
             $this->add($key, $value);
@@ -36,8 +37,8 @@ class Router {
             if(class_exists($path)) {
                  $action = $this->params['action'].'Action';
                  if (method_exists($path, $action)) {
-                     $controller = new $path($this->params);
-                     $controller->$action();
+                    $controller = new $path($this->params);
+                    $controller->$action();
                  }
                  else {
                      echo 'Не найден экшн: '. $action;
